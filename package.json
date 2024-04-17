@@ -9,7 +9,7 @@
     "scripts": {
         "lint": "tsc --noEmit -p .",
         "build:dev": "swc src -d lib -w",
-        "build": "swc src -d lib && tsc --declaration --emitDeclarationOnly"
+        "build": "tsc --declaration --sourceMap"
     },
     "repository": {
         "type": "git",
