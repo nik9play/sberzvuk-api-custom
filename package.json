@@ -1,7 +1,6 @@
 {
     "name": "sberzvuk-api",
     "description": "Библиотека для взаимодействия с API музыкальной платформы «СберЗвук»",
-    "packageManager": "yarn@4.0.2",
     "version": "2.1.9",
     "main": "lib/index.js",
     "license": "MIT",
@@ -9,7 +8,8 @@
     "scripts": {
         "lint": "tsc --noEmit -p .",
         "build:dev": "swc src -d lib -w",
-        "build": "tsc --declaration --sourceMap"
+        "build": "tsc --declaration --sourceMap",
+        "prepare": "npm run build"
     },
     "repository": {
         "type": "git",
